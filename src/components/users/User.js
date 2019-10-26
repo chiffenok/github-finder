@@ -65,29 +65,9 @@ const User = ({ match }) => {
                         Visit Github Profile
                     </a>
                     <ul>
-                        <li>
-                            {login && (
-                                <Fragment>
-                                    <strong>Username: </strong> {login}
-                                </Fragment>
-                            )}
-                        </li>
-
-                        <li>
-                            {company && (
-                                <Fragment>
-                                    <strong>Company: </strong> {company}
-                                </Fragment>
-                            )}
-                        </li>
-
-                        <li>
-                            {blog && (
-                                <Fragment>
-                                    <strong>Website: </strong> {blog}
-                                </Fragment>
-                            )}
-                        </li>
+                        {login && <li><strong>Username: </strong> {login}</li>}
+                        {company && <li><strong>Company: </strong> {company}</li>}
+                        {blog && <li><strong>Website: </strong> {blog}</li>}
                     </ul>
                 </div>
             </div>
